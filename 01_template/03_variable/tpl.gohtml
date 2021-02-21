@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{{range .}}
+{{$n := .Name}}{{$a := .Age}}{{$w := .Weight}}
+   <h1>Name - {{$n}}</h1>
+   <h2>Age - {{$a}}</h2>
+   <h3>Weight - {{$w}}</h3>
+ {{end}}
+</body>
+</html>
