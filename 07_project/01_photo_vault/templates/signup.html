@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/signup.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="leftheader">
+        <!-- <object type="image/svg+xml" data="myicon.svg">
+          <!-- Your fall back here -->
+        <img src="styles/myicon.svg" />
+        <!-- </object> -->
+        <p>Photo Vault</p>
+      </div>
+      <div class="rightheader">
+        <p>if already <a href="/login">login</a></p>
+      </div>
+    </header>
+    <main>
+      <div id="signup">
+        <br />
+        <h1>Sign Up..!</h1>
+        <br />
+        <form action="/" method="post" enctype="multipart/form-data">
+          <input
+            class="bt"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+            style="text-transform: uppercase"
+          /><br />
+          <input
+            class="bt"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            style="text-transform: lowercase"
+            required
+          /><br />
+          <input
+            class="bt"
+            type="password"
+            name="password"
+            required
+            placeholder="Password"
+          /><br />
+          <label for="date">Date of Birth</label><br />
+          <input
+            class="bt"
+            type="date"
+            name="date"
+            id="date"
+            required
+            placeholder="Date Of Birth"
+          /><br />
+          <div id="radio">
+            <input type="radio" value="male" name="gender" id="male" required />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              value="women"
+              name="gender"
+              id="women"
+              required
+            />
+            <label for="women">Women</label>
+          </div>
+          <input type="file" accept=".jpeg,.png" name="profilepic" id="profilepic" required />
+          <label for="profilepic" id="profilepiclabel"> Upload Profile Pic </label>
+          <p class="file-name"></p>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+    </main>
+    <footer id="weathercontainer">
+      <img id="icon" src="" alt="" />
+      <p id="weather"></p>
+      <p id="temp"></p>
+      <p id="feelslike"></p>
+      <p id="aqi"></p>
+      <p id="city"></p>
+    </footer>
+    <script src="styles/weather.js"></script>
+  </body>
+</html>

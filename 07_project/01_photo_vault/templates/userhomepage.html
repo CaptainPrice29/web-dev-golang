@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/userhomepage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#headerimg" id="top">Top</a>
+    <header>
+      <div class="leftheader">
+        <img id="headerimg" src="/styles/myicon.svg" />
+        <p>Photo Vault</p>
+      </div>
+      <div class="rightheader">
+        <a href="/logout">Logout</a>
+      </div>
+    </header>
+    <main>
+      <div id="userinfo">
+        <div id="profilepicinfo">
+          <img src="{{.Profilepicx}}" alt="Profile Picture" />
+          <span>
+            <p id="name">{{.Namex}}</p>
+            <p id="email">{{.Emailx}}</p>
+          </span>
+        </div>
+        <div id="userinfodiv">
+          <p>Storage Occupied: {{.Sizex}} MB</p>
+        </div>
+      </div>
+      {{if .Photosx}}
+      <div id="container">
+        {{range .Photosx}}
+        <div class="pics">
+          <img src="{{.}}" alt="image" />
+        </div>
+        {{end}}
+      </div>
+      {{end}}
+
+      <div id="uploadphoto">
+        <h2>Upload Photos</h2>
+        <form
+          id="uploadform"
+          action="/upload"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="file" accept=".jpeg,.png" name="uploadpic" id="uploadpic" required />
+          <label for="uploadpic"
+            >Select File
+            <p class="file-name"></p>
+          </label>
+          <input type="submit" value="Upload" id="upload" />
+        </form>
+      </div>
+    </main>
+
+    <script src="styles/userhomepage.js"></script>
+  </body>
+</html>
