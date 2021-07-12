@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: x-small;
+  color: rgb(80, 79, 79);
+
+  padding: 5px 15px;
+
+  box-shadow: 1px 0 15px 1px black;
+  margin-bottom: 15px;
+}
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 10px;
+}
+#add {
+  color: rgb(56, 56, 56);
+  padding: 7px 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px black;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  font-size: 1em;
+}
+#add:hover {
+  color: black;
+  background-color: rgb(202, 201, 201);
+}
+.notes {
+  float: left;
+  margin: 10px;
+  height: 154px;
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px black;
+}
+.notes-btn {
+  padding: 6px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: inherit;
+}
+.notes-btn button {
+  font-size: 17px;
+  color: grey;
+  padding: 3px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+.edit:hover {
+  color: darkturquoise;
+}
+.delete:hover {
+  color: red;
+}
+textarea {
+  height: 111px;
+  width: 100%;
+  overflow: unset;
+  resize: none;
+  padding: 10px;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
+.main {
+  padding: 10px;
+  height: 111px;
+  width: 100%;
+
+  overflow: hidden;
+  resize: none;
+  border-radius: inherit;
+}
+.hidden {
+  display: none;
+}

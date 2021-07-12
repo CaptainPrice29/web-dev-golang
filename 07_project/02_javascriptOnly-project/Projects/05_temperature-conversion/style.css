@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+#inner {
+    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: coral;
+  padding: 20px 50px;
+}
+form > * {
+  font-size: x-large;
+  margin: 5px 10px;
+}
+#convert {
+  background-color: rgb(224, 156, 29);
+}
+#result {
+  font-weight: bolder;
+}

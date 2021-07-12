@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#outer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgreen;
+}
+.card {
+  margin: 0 20px;
+  text-align: center;
+}
+p {
+  font-size: x-large;
+}
+.counter{
+    margin-top: 30px;
+    font-size: xx-large;
+    color: firebrick;
+}
