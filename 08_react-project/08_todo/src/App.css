@@ -1,0 +1,67 @@
+.App {
+  /* text-align: center; */
+  min-height: 100vh;
+  background-color: cadetblue;
+}
+.container{
+  /* border: 1px solid red; */
+  max-width: 600px;
+  padding-top: 25px;
+}
+.todo-list{
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 15px;
+  margin: 10px 0px;
+  list-style: none;
+  /* overflow-x: scroll; */
+ 
+}
+.radio{
+  align-self: center;
+}
+.input-item{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  height: fit-content;
+  width: 85%;
+  /* border: 1px solid green; */
+  white-space: normal;
+}
+.delButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-self: center; */
+  width: 10%;
+  /* border: 1px solid green; */
+  font-weight: bolder;
+  
+
+}
+.delButton:hover{
+  cursor: pointer;
+  color: red;
+
+}
+
+#addbutton{
+  background-color: rgb(54, 187, 211);
+ margin-top: 5px;
+  border-radius: 7px;
+  padding: 3px 17px;
+  align-self: center;
+}
+#setInput{
+  display: flex;
+  flex-direction: column;
+  ;
+}
+#sort{
+  background-color: rgba(255, 255, 255, 0.493);
+  border-radius: 6px;
+}
